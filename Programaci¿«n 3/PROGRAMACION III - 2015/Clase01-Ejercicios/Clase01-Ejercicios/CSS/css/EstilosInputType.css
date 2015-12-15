@@ -1,0 +1,39 @@
+input
+{
+    font-family: 'Century Gothic';
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    color: #FF00FF;
+    background-color: #008080;
+}
+
+input[type="button"]
+{
+    font-family: 'Wide Latin';
+    font-size: xx-large;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #800000;
+    background-color: #C0C0C0;
+}
+
+input[type="text"]
+{
+    border-style: dashed;
+    border-width: medium;
+    font-family: Romantic;
+    font-size: 66px;
+    font-weight: lighter;
+    font-style: normal;
+    text-transform: capitalize;
+    color: #800080;
+    text-decoration: underline;
+    background-color: #00FFFF;
+    text-align: center;
+    letter-spacing: 0.5em;
+    width:90%;
+}

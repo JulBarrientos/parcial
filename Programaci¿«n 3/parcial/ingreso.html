@@ -1,0 +1,58 @@
+<html>
+<form action="administracion.php" method="post" enctype="multipart/form-data" >
+<table border="2px">
+	<tr>
+		<td colspan="5">
+			<p style="background-color: blue;color:greenyellow; text-align:center"> Datos Personales </p>
+		</td>
+	</tr>
+
+	<tr>
+		<td rowspan="2">
+			<div style="background-color:red; color:white"> Datos Obligatorios</div>
+		</td>
+		
+		<td>
+			<div style="background-color:red; color:white"> Apellido </div>
+		</td>
+
+		<td>
+			<input type="text" name="txtApellido" id="txtApellido" required/>
+		</td>
+
+		<td>
+			<div style="background-color:red; color:white "> Nombre </div>
+		</td>
+
+		<td>
+			<input type="text" name="txtNombre" id="txtNombre"  required />
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<div style="background-color:red; color:white"> Legajo </div>
+		</td>
+		<td>
+			<input type="text" name="txtLegajo" id="txtLegajo" required/>
+		</td>	
+		<td>
+			<div style="background-color:red; color:white"> Seleccione Foto </div>
+		</td>
+		<td>
+			<input type="file"  name="txtFoto" id="txtFoto" required>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="5">
+			<div style="float: right">
+				<input type="submit" name="Alta" id="Alta" value="Enviar">
+				<input type="reset" value="Limpiar">
+				<input type="submit" name="Baja" id="Baja" value="Eliminar">
+			</div>
+		</td>
+	</tr>
+</table>
+</form>
+</html>

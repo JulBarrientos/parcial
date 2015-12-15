@@ -1,0 +1,11 @@
+
+1- Guardar nombre y clave en la Base de datos “modelo” (tabla usuario), con un formulario por ajax.
+2- Ingreso: Pedir nombre y clave, si coincide con algún dato de los cargados en la base, Iniciar sesión.
+3- Validar que los campos del punto 1: que no estén vacíos.
+4- Guardar en la cookie el nombre y mostrar los datos la próxima vez.
+5- Si la sesión existe mostrar el botón "mi perfil" y permite editar  solamente el nombre del usuario.
+6- Crear un campo nuevo en la tabla usuario ("tipo") con 2 valores posibles (admin y user). Crear un usuario con 
+cada uno como mínimo.
+7- Si tiene sesión iniciada permitir acceder a  mostrar una grilla con los datos de todos los usuarios cargados.
+8- Si el usuario es de tipo “admin”, se verá el botón de borrar. Y se borrara el usuario.
+9- Permitir carga una foto en el perfil del usuario y relacionarla con el usuario en la grilla.

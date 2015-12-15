@@ -1,0 +1,51 @@
+#id_unico {
+	position : relative;
+	background : lime;
+	height : 500px; 
+	padding-left : 50px;
+	padding-top: 100px;
+	border : solid;
+	border-color : red;
+	border-width : 1;
+	visibility:visible;
+}
+
+a:link {
+	color:Red;
+	border-top-width:thin;	
+}
+
+a:active{
+	color:Black;
+}
+
+a:hover{
+	color:#ff00ff;
+	border-top-color:Aqua;
+    border-top-width:thick;
+}
+
+a:visited{
+	color:Olive;
+}
+
+p:first-line{
+	font-style:oblique;
+}
+
+p:first-letter{
+	font-size:200%;
+	float:right;
+}
+
+div.claseDiv{
+	border:dotted;
+	border-color:black;
+	border-width:2;
+	visibility:hidden;	
+}
+
+h1 em{ color: red; }
+
+em { color:Green; }
+
