@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="inventario.Usuarios" table="INV01">
+         <id name="cd_usuario" type="int">
+		   <column name="cd_usuario"/>		  		   
+		  </id>		  
+        <property name="id_usuario" type="java.lang.String">
+            <column name="id_usuario" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="password" />
+        </property>
+        <property name="habilitado" type="java.lang.Boolean">
+            <column name="habilitado" />
+        </property>
+        <property name="nom" type="java.lang.String">
+            <column name="nom" />
+        </property>
+        <property name="ape" type="java.lang.String">
+            <column name="ape" />
+        </property>
+        <property name="usuario_modi" type="java.lang.String">
+            <column name="usuario_modi" />
+        </property>                
+        <property name="fecha_modi" type="timestamp">
+            <column name="fecha_modi" />
+        </property>
+    </class>
+    <sql-query name="obtener_usuarios">
+ <return alias="obtener_usuarios" class="inventario.Usuarios"  lock-mode="read" >
+ 	<return-property name="cd_usuario" column="cd_usuario" />
+   <return-property name="id_usuario" column="id_usuario" />
+   <return-property column="password" name="password"/>
+   <return-property column="habilitado" name="habilitado"/>
+   <return-property column="nom" name="nom"/>   
+   <return-property column="ape" name="ape"/>
+   <return-property column="usuario_modi" name="usuario_modi"/>
+   <return-property column="fecha_modi" name="fecha_modi"/>
+  </return>
+  <![CDATA[	select * from INV01 order by ape]]>
+ </sql-query>
+  <sql-query name="getusuario">
+ <return alias="getusuario" class="inventario.Usuarios"  lock-mode="read" >
+ 	<return-property name="cd_usuario" column="cd_usuario" />
+   <return-property name="id_usuario" column="id_usuario" />
+   <return-property column="password" name="password"/>
+   <return-property column="habilitado" name="habilitado"/>
+   <return-property column="nom" name="nom"/>   
+   <return-property column="ape" name="ape"/>
+   <return-property column="usuario_modi" name="usuario_modi"/>
+   <return-property column="fecha_modi" name="fecha_modi"/>
+  </return>
+  <![CDATA[	select * from INV01 where cd_usuario = :cd_usuario]]>
+ </sql-query>
+</hibernate-mapping>

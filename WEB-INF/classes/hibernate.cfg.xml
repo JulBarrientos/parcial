@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory >
+  <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+  <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+  <property name="hibernate.connection.password">FSI05</property>
+  <property name="hibernate.connection.url">jdbc:sqlserver://FSINET05\FSINET05:1433;DataBaseName=INVENTARIO</property>
+  <property name="hibernate.connection.username">FSI</property>
+  <property name="hibernate.default_catalog">INVENTARIO</property>
+  <property name="hibernate.default_schema">dbo</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2008Dialect</property>
+  <property name="hibernate.c3p0.dataSourceName">dbInventarioPool</property>
+  <property name="hibernate.c3p0.max_size">300</property>
+  <property name="hibernate.c3p0.timeout">0</property>
+  <property name="hibernate.jdbc.batch_size">0</property>  
+  <property name="hibernate.show_sql">false</property>
+  <property name="hibernate.format_sql">false</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <property name="hibernate.connection.isolation">2</property>  
+  <mapping class="inventario.errores" package="inventario" resource="inventario/errores.hbm.xml"/>
+  <mapping class="inventario.userObj" package="inventario" resource="inventario/userObj.hbm.xml"/>
+  <mapping class="inventario.Inventario" package="inventario" resource="inventario/inventario.hbm.xml"/>
+  <mapping class="inventario.Inventario_hist" package="inventario" resource="inventario/inventario_hist.hbm.xml"/>
+  <mapping class="inventario.Usuarios" package="inventario" resource="inventario/Usuarios.hbm.xml"/>
+  <mapping class="inventario.Apps" package="inventario" resource="inventario/apps.hbm.xml"/>
+  <mapping class="inventario.datosempresa" package="inventario" resource="inventario/datosempresa.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

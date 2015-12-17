@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Inventario</display-name>
+   <servlet>
+    <display-name>Tabla</display-name>
+    <servlet-name>Tabla</servlet-name>
+    <servlet-class>inventario.Tabla</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Tabla</servlet-name>
+    <url-pattern>/Tabla</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <display-name>Goto</display-name>
+    <servlet-name>Goto</servlet-name>
+    <servlet-class>inventario.Goto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Goto</servlet-name>
+    <url-pattern>/Goto</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>inventario.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+
+ 
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error.html</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/error.html</location>
+  </error-page>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

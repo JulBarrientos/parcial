@@ -1,0 +1,5 @@
+Permissions: all-permissions
+Codebase: *
+Application-Name: Inventario
+Caller-Allowable-Codebase:  *
+Application-Library-Allowable-Codebase: *
